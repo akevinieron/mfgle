@@ -10,7 +10,6 @@
 <body>
 	<header>
 		<div class="container">
-			<!-- <img src="images/logo.png" alt="Logo Microfundicion FGLE"> -->
 			<div class="row">
 				<div class="logo span6">
 					<img src="images/logo.png" alt="Microfundicion FGLE Logo" />
@@ -28,8 +27,21 @@
 	</header>
 	<div class="container contenido">
 		<div class="row">
-			<div class="span10 offset1">
+			<div class="span4 offset1">
 				<h2>Contacto</h2>
+				<form action="#">
+					<label for="form_nombre">Nombre:</label>
+					<input type="text" placeholder="Escriba su nombre..." id="form_nombre">
+					<label for="form_correo">Correo:</label>
+					<input type="text" placeholder="Escriba su correo..." id="form_correo">
+					<label for="form_mensaje">Mensaje:</label>
+					<textarea name="" id="form_mensaje" cols="30" rows="5" placeholder="Escriba su mensaje"></textarea>
+					<br>
+					<button class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+			<div class="span6">
+				<h2>Encuentranos</h2>
 			</div>
 		</div>
 	</div>
