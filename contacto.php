@@ -42,6 +42,7 @@
 			</div>
 			<div class="span6">
 				<h2>Encuentranos</h2>
+				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=plaza+central+Santo+Domingo&amp;aq=&amp;sll=18.496077,-69.9193&amp;sspn=0.189492,0.308647&amp;g=Santo+Domingo,+Distrito+Nacional,+Dominican+Republic&amp;ie=UTF8&amp;hq=plaza+central&amp;hnear=Santo+Domingo,+Los+Alcarrizos,+Santo+Domingo+Province,+Dominican+Republic&amp;t=m&amp;ll=18.48197,-69.959049&amp;spn=0.028491,0.036478&amp;z=14&amp;output=embed"></iframe><br /><small><a href="http://maps.google.es/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=plaza+central+Santo+Domingo&amp;aq=&amp;sll=18.496077,-69.9193&amp;sspn=0.189492,0.308647&amp;g=Santo+Domingo,+Distrito+Nacional,+Dominican+Republic&amp;ie=UTF8&amp;hq=plaza+central&amp;hnear=Santo+Domingo,+Los+Alcarrizos,+Santo+Domingo+Province,+Dominican+Republic&amp;t=m&amp;ll=18.48197,-69.959049&amp;spn=0.028491,0.036478&amp;z=14" style="color:#0000FF;text-align:left">Ver Mapa Grande</a></small>
 			</div>
 		</div>
 	</div>

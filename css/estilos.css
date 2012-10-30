@@ -17,6 +17,10 @@ header nav a:hover{
 	color: #a80505 !important;
 }
 
+.slide{
+	margin-bottom: 20px;
+}
+
 .contenido{
 	background-color: #fff;
 	overflow: auto;
