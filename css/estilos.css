@@ -54,6 +54,10 @@ header nav a:hover{
 	margin-right: 10px;
 }
 
+.visita_catalogo{
+	border: 3px #333 solid;
+}
+
 footer{
 	color: #ccc;
 	margin-top: 15px;
@@ -63,4 +67,20 @@ footer{
 
 footer .row{
 	margin-top: 45px;
+}
+
+
+.slides_container {
+	width:750px;
+	display:none;
+}
+
+.slides_container div {
+	width:750px;
+	height:241px;
+	display:block;
+}
+
+.pagination{
+	display: none;
 }
