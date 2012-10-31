@@ -5,6 +5,7 @@
 	<title>Microfundicion FGLE</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Overlock:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/live.js"></script>
 </head>
 <body>
