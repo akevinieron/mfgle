@@ -79,14 +79,47 @@ footer .row{
 	margin-top: 45px;
 }
 
+#slides{
+	position: relative;
+}
+
+.prev{
+	position: absolute;
+	top: 115px;
+	left: 5px;
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	color: #333;
+	background: url(../images/flecha_izq.png) no-repeat;
+}
+
+.next{
+	position: absolute;
+	top: 115px;
+	right: 5px;
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	color: #333;
+	background: url(../images/flecha_der.png) no-repeat;
+}
+
+
+.next:hover{
+	text-decoration: none;
+}
 
 .slides_container {
-	width:750px;
+	width:780px;
 	display:none;
+	border: 8px #333 solid;
+	border-left: 0;
+	border-right: 0;
 }
 
 .slides_container div {
-	width:750px;
+	width:780px;
 	height:241px;
 	display:block;
 }
