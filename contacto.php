@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="logo span6">
-					<img src="images/logo.png" alt="Microfundicion FGLE Logo" />
+					<a href="index.html"><img src="images/logo.png" alt="Microfundicion FGLE Logo" /></a>
 				</div>
 				<nav class="navbar span6">
 					<ul class="nav">
@@ -50,7 +50,7 @@
 	<footer class="container">
 		<div class="row">
 			<div class="span5 offset1">
-				<p>&copy Todos los derechos reservados 2012-2013</p>
+				<p>&copy; Todos los derechos reservados 2012-2013</p>
 			</div>
 			<div class="span3 offset3">
 				<img src="images/logo_blanco.png" alt="Microfundicion FGLE Logo Blanco">

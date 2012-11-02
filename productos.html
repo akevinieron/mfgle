@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Microfundicion FGLE</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
-	<link href='http://fonts.googleapis.com/css?family=Overlock:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<link href='http://fonts.googleapis.com/css?family=Overlock:400,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" />
 	<script type="text/javascript" src="js/live.js"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="logo span6">
-					<img src="images/logo.png" alt="Microfundicion FGLE Logo" />
+					<a href="index.html"><img src="images/logo.png" alt="Microfundicion FGLE Logo" /></a>
 				</div>
 				<nav class="navbar span6">
 					<ul class="nav">
@@ -38,7 +39,7 @@
 						<img src="images/pines/1.jpg" alt="pin" />
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn span6" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-block" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 				<h2>Productos</h2>
@@ -53,19 +54,19 @@
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="1">
-							<ul class="thumbnails">
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/1.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/2.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/3.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/4.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/5.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/6.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/1.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/2.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/3.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/4.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/5.jpg" alt=""></a></li>
-								<li class="span2"><a href="#mody" data-toggle="modal" class="thumbnail"><img src="images/pines/6.jpg" alt=""></a></li>
+							<ul class="thumbnails" id="galery">
+								<li class="span2"><a href="images/pines/1.jpg" class="thumbnail"><img src="images/pines/thumbnails/1.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/2.jpg" class="thumbnail"><img src="images/pines/thumbnails/2.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/3.jpg" class="thumbnail"><img src="images/pines/thumbnails/3.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/4.jpg" class="thumbnail"><img src="images/pines/thumbnails/4.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/5.jpg" class="thumbnail"><img src="images/pines/thumbnails/5.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/6.jpg" class="thumbnail"><img src="images/pines/thumbnails/6.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/1.jpg" class="thumbnail"><img src="images/pines/thumbnails/1.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/2.jpg" class="thumbnail"><img src="images/pines/thumbnails/2.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/3.jpg" class="thumbnail"><img src="images/pines/thumbnails/3.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/4.jpg" class="thumbnail"><img src="images/pines/thumbnails/4.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/5.jpg" class="thumbnail"><img src="images/pines/thumbnails/5.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/pines/6.jpg" class="thumbnail"><img src="images/pines/thumbnails/6.jpg" alt=""></a></li>
 							</ul>
 						</div>
 						<div class="tab-pane" id="2">
@@ -156,7 +157,7 @@
 	<footer class="container">
 		<div class="row">
 			<div class="span5 offset1">
-				<p>&copy Todos los derechos reservados 2012-2013</p>
+				<p>&copy; Todos los derechos reservados 2012-2013</p>
 			</div>
 			<div class="span3 offset3">
 				<img src="images/logo_blanco.png" alt="Microfundicion FGLE Logo Blanco">
@@ -165,5 +166,14 @@
 	</footer>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#galery a').lightBox({
+				txtImage: "Imagen",
+				txtOf: "de"
+			});
+		});
+	</script>
 </body>
 </html>
