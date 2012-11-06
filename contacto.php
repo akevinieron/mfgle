@@ -32,13 +32,13 @@
 				<h2>Contacto</h2>
 				<form action="#">
 					<label for="form_nombre">Nombre:</label>
-					<input type="text" placeholder="Escriba su nombre..." id="form_nombre">
-					<label for="form_correo">Correo:</label>
-					<input type="text" placeholder="Escriba su correo..." id="form_correo">
+					<input type="text" placeholder="Escriba su nombre..." id="form_nombre" name="nombre">
+					<label for="form_email">Correo:</label>
+					<input type="text" placeholder="Escriba su correo..." id="form_email" name="email">
 					<label for="form_mensaje">Mensaje:</label>
-					<textarea name="" id="form_mensaje" cols="30" rows="5" placeholder="Escriba su mensaje"></textarea>
+					<textarea name="mensaje" id="form_mensaje" cols="30" rows="5" placeholder="Escriba su mensaje"></textarea>
 					<br>
-					<button class="btn btn-primary">Enviar</button>
+					<button class="btn btn-primary envio_contacto">Enviar</button>
 				</form>
 			</div>
 			<div class="span6">
@@ -57,6 +57,41 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.envio_contacto').click(function(){
+				var nombre = $("#form_nombre").val();
+					email = $("#form_email").val();
+					validacion_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+					mensaje = $("#form_mensaje").val();
+
+				if (nombre == "") {
+					$("#form_nombre").focus();
+					return false;
+				}else if (email == "" || !validacion_email.test(email)) {
+					$("#form_email").focus();
+					return false;
+				}else if (mensaje == "") {
+					$("#form_mensaje").focus();
+					return false;
+				}else{
+					var datos = 'nombre='+ nombre +'&email='+ email +'&mensaje'+ mensaje;
+					$.ajax({
+						type: "POST",
+						url: "proceso_form.php",
+						data: datos,
+						success: function(){
+							alert('Su mensaje fue enviado');
+						},
+						error: function(){
+							alert('Ocurrio un error enviando su mensaje!!');
+						}
+					});
+					return false;
+				}
+			});
+		});
+	</script>
 </body>
 </html>
 
