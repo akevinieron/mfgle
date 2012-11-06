@@ -30,7 +30,7 @@
 		<div class="row">
 			<div class="span4 offset1">
 				<h2>Contacto</h2>
-				<form method="post">
+				<form action="#">
 					<label for="form_nombre">Nombre:</label>
 					<input type="text" placeholder="Escriba su nombre..." id="form_nombre" name="nombre">
 					<label for="form_email">Correo:</label>
