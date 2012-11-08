@@ -8,6 +8,19 @@
 	<link href='http://fonts.googleapis.com/css?family=Overlock:400,700' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" />
 	<script type="text/javascript" src="js/live.js"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36182944-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </head>
 <body>
 	<header>
@@ -50,6 +63,7 @@
 						<li><a href="#galery_placas" data-toggle="tab">Placas</a></li>
 						<li><a href="#galery_tarjeteros" data-toggle="tab">Tarjeteros</a></li>
 						<li><a href="#galery_placas_reconocimiento" data-toggle="tab">Placas de <br />Reconocimiento</a></li>
+						<li><a href="#galery_monedas" data-toggle="tab">Monedas</a></li>
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="galery_llaveros">
@@ -95,6 +109,7 @@
 								<li class="span2"><a href="images/productos/placas/4.jpg" class="thumbnail"><img src="images/productos/placas/thumbnails/4.jpg" alt=""></a></li>
 								<li class="span2"><a href="images/productos/placas/5.jpg" class="thumbnail"><img src="images/productos/placas/thumbnails/5.jpg" alt=""></a></li>
 								<li class="span2"><a href="images/productos/placas/6.jpg" class="thumbnail"><img src="images/productos/placas/thumbnails/6.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/placas/7.jpg" class="thumbnail"><img src="images/productos/placas/thumbnails/7.jpg" alt=""></a></li>
 							</ul>
 						</div>
 						<div class="tab-pane" id="galery_tarjeteros">
@@ -113,6 +128,19 @@
 								<li class="span2"><a href="images/productos/placas_reconocimiento/1.jpg" class="thumbnail"><img src="images/productos/placas_reconocimiento/thumbnails/1.jpg" alt=""></a></li>
 								<li class="span2"><a href="images/productos/placas_reconocimiento/2.jpg" class="thumbnail"><img src="images/productos/placas_reconocimiento/thumbnails/2.jpg" alt=""></a></li>
 								<li class="span2"><a href="images/productos/placas_reconocimiento/3.jpg" class="thumbnail"><img src="images/productos/placas_reconocimiento/thumbnails/3.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/placas_reconocimiento/4.jpg" class="thumbnail"><img src="images/productos/placas_reconocimiento/thumbnails/4.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/placas_reconocimiento/5.jpg" class="thumbnail"><img src="images/productos/placas_reconocimiento/thumbnails/5.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/placas_reconocimiento/6.jpg" class="thumbnail"><img src="images/productos/placas_reconocimiento/thumbnails/6.jpg" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="tab-pane" id="galery_monedas">
+							<h3>Monedas</h3>
+							<ul class="thumbnails">
+								<li class="span2"><a href="images/productos/monedas/1.jpg" class="thumbnail"><img src="images/productos/monedas/thumbnails/1.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/monedas/2.jpg" class="thumbnail"><img src="images/productos/monedas/thumbnails/2.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/monedas/3.jpg" class="thumbnail"><img src="images/productos/monedas/thumbnails/3.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/monedas/4.jpg" class="thumbnail"><img src="images/productos/monedas/thumbnails/4.jpg" alt=""></a></li>
+								<li class="span2"><a href="images/productos/monedas/5.jpg" class="thumbnail"><img src="images/productos/monedas/thumbnails/5.jpg" alt=""></a></li>
 							</ul>
 						</div>
 					</div>
@@ -156,6 +184,11 @@
 			});
 
 			$('#galery_placas_reconocimiento a').lightBox({
+				txtImage: "Imagen",
+				txtOf: "de"
+			});
+
+			$('#monedas a').lightBox({
 				txtImage: "Imagen",
 				txtOf: "de"
 			});
