@@ -2,6 +2,11 @@ body{
 	background-image: url("../images/bg_mosaico.jpg");
 }
 
+h1 small{
+	display: block;
+	color: #a80505 !important;
+}
+
 header{
 	height: 72px;
 	background: #ccc url("../images/bg_header.png");
@@ -43,6 +48,10 @@ header nav a:hover{
 .presentacion{
 	margin-bottom: 50px;
 	font-size: 15px;
+}
+
+.lista-valores{
+	list-style: none;
 }
 
 #titulo_presentacion{
