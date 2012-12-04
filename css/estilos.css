@@ -2,9 +2,16 @@ body{
 	background-image: url("../images/bg_mosaico.jpg");
 }
 
+h1{
+	text-align: center;
+	color: #111 !important;
+	text-transform: uppercase;
+}
+
 h1 small{
 	display: block;
 	color: #a80505 !important;
+	text-transform: capitalize;
 }
 
 header{
