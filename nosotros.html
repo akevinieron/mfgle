@@ -5,6 +5,7 @@
 	<title>Microfundicion FGLE</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/jquery.lightbox-0.5.css" />
 	<link href='http://fonts.googleapis.com/css?family=Overlock:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/live.js"></script>
 	<script type="text/javascript">
@@ -33,7 +34,7 @@
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="#" class="current">Nosotros</a></li>
 						<li><a href="productos.html">Productos</a></li>
-						<li><a href="contacto.php">Contactos</a></li>
+						<li><a href="contacto.html">Contactos</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -63,6 +64,28 @@
 					<li><i class="icon-ok"></i> Responsabilidad con nuestro trabajo</li>
 					<li><i class="icon-ok"></i> Excelencia</li>
 				</ul>
+				<hr />
+				<h2 id="concepto_trabajo">Concepto de trabajo</h2>
+				<p>Trabajamos estrictamente  con las necesidades y especificaciones del cliente.  Ofrecemos una presentación a escala real y acabados representados digitalmente.</p>
+				<div id="conceptos_img">
+					<ul class="thumbnails">
+						<li>
+							<a href="images/conceptos/concepto1.jpg" class="thumbnail">
+								<img src="images/conceptos/thumbnails/concepto1.jpg" alt="Concepto Microfundicion">
+							</a>
+						</li>
+						<li>
+							<a href="images/conceptos/concepto2.jpg" class="thumbnail">
+								<img src="images/conceptos/thumbnails/concepto2.jpg" alt="Concepto Microfundicion">
+							</a>
+						</li>
+						<li>
+							<a href="images/conceptos/concepto3.jpg" class="thumbnail">
+								<img src="images/conceptos/thumbnails/concepto3.jpg" alt="Concepto Microfundicion">
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -76,5 +99,19 @@
 			</div>
 		</div>
 	</footer>
+	<!-- JQuery y Librerias JS -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready", inicio);
+
+		function inicio() {
+			$('#conceptos_img a').lightBox({
+				txtImage: "Imagen",
+				txtOf: "de"
+			});
+		}
+	</script>
 </body>
 </html>
